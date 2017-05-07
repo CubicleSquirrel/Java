@@ -1,3 +1,5 @@
+// This program sets up an Array, adds a value at a specfic location, and then prints out the value stored in another location 
+
 import java.util.ArrayList;
 
 public class TemperaturesC {
