@@ -1,4 +1,4 @@
-// This program sets up an Array, adds a value at a specfic location, and then prints out the value stored in another location 
+// This program sets up an Array, adds a value at a specfic location, and then returns the velue in each spot in order. 
 
 import java.util.ArrayList;
 
@@ -7,14 +7,19 @@ public class TemperaturesC {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> weeklyTemperatures = new ArrayList<Integer>();
+	// Sets up the list
 		weeklyTemperatures.add(78);
 		weeklyTemperatures.add(67);
 		weeklyTemperatures.add(89);
 		weeklyTemperatures.add(94);
-		
-    weeklyTemperatures.add(2, 111);
-    
-    System.out.println( weeklyTemperatures.get(4) );
+	// Inserts a value at a specfic location
+    		weeklyTemperatures.add(2, 111);
+	// a For loop that prints out the value in each spot in the list
+    for (int j = 0; j < weeklyTemperatures.size(); j++){
+      
+      System.out.println( weeklyTemperatures.get(j) );
+      
+    }
 		
 
 	}
